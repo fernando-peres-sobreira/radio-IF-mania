@@ -1,0 +1,143 @@
+.inv{
+    display: none;
+}
+.vis{
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+}
+.cab{
+    background-color: forestgreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.im{
+    display: flex;
+    width: 250px;
+}
+ul, li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: flex;
+    padding: 10px;
+    background-color: darkgreen;
+    border-radius: 25px;
+
+}
+.pm{
+    background-color: red;
+}
+video{
+    width: 100%;
+    display: flex;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+}
+.desc{
+    margin: 20px;
+}
+.textos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.qr{
+    width: 250px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.baixar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.musica{
+    display: inline;
+}
+p{
+    font-family: cursive;
+}
+.modal{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.imagem{
+    width: 455px;
+}
+.ba{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+input{
+    border-radius: 25px;
+    border-color: forestgreen;
+    display: flex;
+    width: 250px;
+    margin: 10px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+fieldset{
+    border-radius: 25px;
+    display: block;
+}
+button{
+    border-radius: 25px;
+    border-color: forestgreen;
+    display: block;
+}
+.display{
+    display: inline;
+}
+.icon{
+    width: 290px;
+    display: flex;
+}
+body,html{
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    margin: inherit;
+}
+.com{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+.imag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#imagens{
+    font-size: 0px;
+}

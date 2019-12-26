@@ -1,0 +1,124 @@
+<!-- Trabalho de POO e LAEC do Fernando e da Sabrina 4A -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--modal-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!--modal-->
+    <link rel="stylesheet" href="./css/site.css">
+    <script src="./js/site.js"></script>
+<!--     <script src="./js/memoria.js"></script> -->
+    <title>  Rádio IF mania</title>
+</head>
+<body >
+        
+
+    <div class="cab">
+            <img src="./img/app.png" class="im">
+            <h1 class="title">Seja bem vindo(a)</h1>
+            <nav>
+                    <ul class="menu">
+                        <li class="link"><a href="https://www.instagram.com/ifdourados.radio">Instagram</a></li>
+                        <li class="link"><a href="memoria.html">Memória musical</a></li>
+                    </ul>
+             </nav>
+    </div>
+    
+    <section class="vis" id="inicio">
+     <section class="modal">
+<fieldset class="display">
+<img src="./img/icon.png" class="icon">
+ <center>
+ <div class="radio">  <!--inicio do display -->
+<audio class="player" controls preload="auto">
+    <source src="http://stream.zeno.fm/v2kq8hxnfhruv">
+</audio>
+    </div> <!--final do display-->
+</center>
+</fieldset>
+
+    <fieldset id="salvo" class="musica">
+            <h1>Pedir Música</h1>
+            <input type="text" id="no" placeholder="Nome da música...">
+            <input type="text" id="art" placeholder="Artista(s)...">
+            <input type="text" id="gem" placeholder="Gênero da música...">
+        	<button onclick="salvarp()">Enviar pedido</button>
+            <button onclick="ir_mus()">Mostrar músicas</button>
+        </fieldset>
+    </section>
+</br>
+
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'"><!--modal-->
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img01" style="width:100%">
+        </div>
+      </div>
+
+      <div class="desc">
+      <h2 class="textos">Rádio IF mania</h2>
+      <h3 class="textos">A Rádio tem como objetivo tornar a hora do intervalo um momento de lazer para os alunos e servidores do IFMS Campus Dourados. A programação da Rádio contará com notícias (sejam elas do Brasil ou de outros lugares do mundo), músicas, informativos relacionados ao Campus, por exemplo, falar sobre inicios e fins dos prasos dos editais (auxílio, munitoria, etc).</h3>
+    </div>
+
+</br>
+
+    <center>
+        <fieldset class="ba">
+           <legend>Baixar aplicativo</legend>
+             <div class="baixar">
+                    <div class="w3-row-padding"><!--modal-->
+                        <div class="w3-container w3-third">
+                            <img src="./img/qrcode.png" style="cursor:pointer" 
+                            onclick="onClick(this)" class="qr">
+                          </div>
+                        </div> 
+    <!-- <img src="./img/qrcode.png" class="qr"> -->
+    <a href="app.apk"><img src="./img/baixar.png" class="imag"></a>
+</div>
+        </fieldset>   
+        <legend>Obs.: O aplicativo só esta disponivel para android</legend>
+    </center>
+</br>
+<center>
+        <video src="./video/App.mp4" controls preload="auto"></video>
+    </center>
+</br>
+</br>
+</br>
+            <fieldset id="salvo">
+                    <h1>Comentários</h1>
+                    <input type="text" id="nome" placeholder="Nome...">
+                    <input type="text" id="email" placeholder="Email...">
+                    <input type="text" id="com" placeholder="Comentário...">
+                    <button onclick="salvarc()">Enviar comentário</button>
+                    <hr>
+                    <button onclick="menu(op)">Mostrar comentários</button>
+                    <br>
+                </fieldset>                
+                
+        </section>
+
+        <section class="inv" id="comen" >
+    
+          <center><h1 class="com">Comentários</h1></center>
+            <div id="listarc"></div>
+            <button onclick="ir_inicio_com()">Voltar para a pagina inícial</button>
+        </section>
+        <section class="inv" id="mus" >
+    
+          <center><h1 class="mus">Músicas pedidas</h1></center>
+            <div id="listarm"></div>
+            <button onclick="ir_inicio_mus()">Voltar para a pagina inícial</button>
+        </section>
+<!--         <section class="inv" id="memo">
+           <center>
+            <body onload="inicio()">
+<section id="imagens" >
+
+    </center>
+    <button onclick="replay()">Jogar novamente</button>
+    <button onclick="ir_inicio_jogo()">Voltar</button>
+</section>
+        </section> -->
+</body>
+</html>
